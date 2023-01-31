@@ -1,0 +1,12 @@
+name: TestPlugin Examples
+type: module
+description: Provides example plugins for Ckeditor5 embedded content.
+package: Sisko
+core_version_requirement: ^9 || ^10
+dependencies:
+  - testplugin
+
+# Information added by Drupal.org packaging script on 2022-09-26
+#version: '1.0.0-alpha3'
+#project: 'ckeditor5_embedded_content'
+#datestamp: 1664187282

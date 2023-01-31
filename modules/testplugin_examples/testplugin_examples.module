@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * The module file with theming functions.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function testplugin_examples_theme($existing, $type, $theme, $path) {
+  return [
+    'testplugin_call_to_action' => [
+      'variables' => [
+        'text' => NULL,
+        'url' => NULL,
+      ],
+      'template' => 'embedded-content/call-to-action',
+    ],
+    'testplugin_tweet' => [
+      'variables' => [
+        'url' => NULL,
+      ],
+      'template' => 'embedded-content/tweet',
+    ],
+    'ckeditor5_styled_list' => [
+      'variables' => [
+        'items' => NULL,
+        'style' => NULL,
+      ],
+      'template' => 'embedded-content/styled-list',
+    ],
+  ];
+}

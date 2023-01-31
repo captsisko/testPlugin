@@ -1,0 +1,30 @@
+testplugin_embeddedContent:
+  provider: testplugin
+  ckeditor5:
+    plugins:
+      - embeddedContent.EmbeddedContent
+    config:
+#      embeddedContent:
+      testPlugin:
+        openDialog:
+          func:
+            name: Drupal.ckeditor5.openDialog
+            invoke: false
+        dialogSettings:
+          height: 75%
+          dialogClass: embedded-content-widget-modal
+          title: Create embedded content
+  drupal:
+    label: Test Plugin
+    elements:
+      - <embedded-content>
+      - <embedded-content data-plugin-config data-plugin-id>
+    admin_library: testplugin/admin.embedded_content
+    class: Drupal\testplugin\Plugin\CKEditor5Plugin\EmbeddedContent
+    library: testplugin/embedded_content
+    toolbar_items:
+#      embeddedContent:
+      testPlugin:
+        label: Testing Plugin
+    conditions:
+      filter: testplugin

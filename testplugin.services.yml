@@ -1,0 +1,8 @@
+#services:
+#  plugin.manager.ckeditor5_embedded_content:
+#    class: Drupal\ckeditor5_embedded_content\EmbeddedContentPluginManager
+#    parent: default_plugin_manager
+services:
+  plugin.manager.testplugin:
+    class: Drupal\testplugin\EmbeddedContentPluginManager
+    parent: default_plugin_manager

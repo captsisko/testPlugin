@@ -1,0 +1,15 @@
+testplugin.dialog:
+  path: '/embedded-content/dialog/{uuid}'
+  defaults:
+    _title: 'Insert embedded content'
+    _form: '\Drupal\testplugin\Form\EmbeddedContentDialogForm'
+    uuid: null
+  requirements:
+    _permission: 'use text format advanced'
+
+testplugin.preview:
+  path: '/embedded-content/preview/{editor}'
+  defaults:
+    _controller: '\Drupal\testplugin\Controller\EmbeddedContentPreview::preview'
+  requirements:
+    _custom_access: '\Drupal\testplugin\Controller\EmbeddedContentPreview::checkAccess'
