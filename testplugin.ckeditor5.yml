@@ -25,6 +25,6 @@ testplugin_embeddedContent:
     toolbar_items:
 #      embeddedContent:
       testPlugin:
-        label: Testing Plugin
+        label: My Test Plugin
     conditions:
       filter: testplugin
